@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">PhoneStoreApp</string>
+    <string name="my_cart">My cart</string>
+    <string name="phone">Galaxy Note 20 Ultra</string>
+    <string name="checkout">Checkout</string>
+    <string name="total">Total</string>
+    <string name="delivery">Delivery</string>
+    <string name="deliveryPrice">Free</string>
+    <string name="empty">Your basket is empty yet</string>
+    <string name="select">Select Category</string>
+    <string name="view_all">View all</string>
+    <string name="search">Search</string>
+    <string name="hot_sales">Hot sales</string>
+    <string name="best_seller">Best Seller</string>
+    <string name="see_more">see more</string>
+    <string name="filter_options">Filter options</string>
+    <string name="prod_details">Product Details</string>
+
+    <string name="newTag">New</string>
+
+    <string name="tab_shop">Shop</string>
+    <string name="tab_details">Details</string>
+    <string name="tab_features">Features</string>
+
+    <string-array name="tmArr">
+        <item>Samsung</item>
+        <item>Xiaomi</item>
+        <item>Apple</item>
+        <item>Realme</item>
+
+    </string-array>
+
+    <string-array name="priceArr">
+        <item>$300 - $500</item>
+        <item>$500 - $700</item>
+        <item>$700 - $900</item>
+        <item>over $900</item>
+
+    </string-array>
+
+    <string-array name="sizeArr">
+        <item>4.5 to 5.5 inches</item>
+        <item>6 to 7 inches</item>
+        <item>7.5 to 8.5 inches</item>
+        <item>over 9 inches</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phones">Phones</string>
+    <string name="computer">Computer</string>
+    <string name="health">Health</string>
+    <string name="books">Books</string>
+    <string name="food">Food</string>
+    <string name="basket">Basket</string>
+    <string name="account">Account</string>
+    <string name="like">Like</string>
+    <string name="explorer">Explorer</string>
+    <string name="geo">Zihuatanejo, Gro</string>
+
+</resources>

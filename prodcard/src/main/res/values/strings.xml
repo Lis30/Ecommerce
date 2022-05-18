@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">activity_prodcard</string>
+    <string name="my_cart">My cart</string>
+    <string name="phone">Galaxy Note 20 Ultra</string>
+    <string name="prod_details">Product Details</string>
+    <string name="prod_picture">Product picture</string>
+
+    <string name="tab_shop">Shop</string>
+    <string name="tab_details">Details</string>
+    <string name="tab_features">Features</string>
+
+    <string name="ModelName">Nokia 2110</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="price">$300</string>
+    <string name="none">None</string>
+</resources>

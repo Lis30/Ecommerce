@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back"
+    tools:context=".ProdCardScreen">
+
+    <ImageView
+        android:id="@+id/prodcard_backBtn"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/z_blue_full_small_roun"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backIc"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/prodcard_backBtn"
+        app:layout_constraintEnd_toEndOf="@+id/prodcard_backBtn"
+        app:layout_constraintStart_toStartOf="@+id/prodcard_backBtn"
+        app:layout_constraintTop_toTopOf="@+id/prodcard_backBtn"
+        app:srcCompat="@drawable/ic_back"
+         />
+
+    <TextView
+
+        android:id="@+id/prodcardName"
+        android:layout_width="133dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="151dp"
+        android:text="@string/prod_details"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/prodcard_basketBtn"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/z_orange_circle"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/basketIc"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/prodcard_basketBtn"
+        app:layout_constraintEnd_toEndOf="@+id/prodcard_basketBtn"
+        app:layout_constraintStart_toStartOf="@+id/prodcard_basketBtn"
+        app:layout_constraintTop_toTopOf="@+id/prodcard_basketBtn"
+        app:srcCompat="@drawable/ic_basket" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prodcard_itemPic"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        app:layout_constraintTop_toBottomOf="@+id/prodcardName"
+        tools:ignore="MissingClass,SpeakableTextPresentCheck"
+        tools:listitem="@layout/recyclerview_images" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/z_white_half_rounded"
+        app:layout_constraintTop_toBottomOf="@+id/prodcard_itemPic"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="38dp"
+        android:numStars="5"
+        android:progressTint="@color/yellow"
+        android:rating="3"
+        android:scaleX=".6"
+        android:scaleY=".6"
+        android:stepSize="0.5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfModel"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/nameOfModel"
+        android:layout_width="244dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/ModelName"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/prodcard_itemPic" />
+
+    <ImageView
+        android:id="@+id/prodcard_heartBtn"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/z_blue_full_small_roun"
+        android:elevation="20dp"
+        app:layout_constraintStart_toEndOf="@+id/nameOfModel"
+        app:layout_constraintTop_toBottomOf="@+id/prodcard_itemPic" />
+
+
+    <ImageView
+        android:id="@+id/heartIc"
+        android:layout_width="14dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/prodcard_heartBtn"
+        app:layout_constraintEnd_toEndOf="@+id/prodcard_heartBtn"
+        app:layout_constraintStart_toStartOf="@+id/prodcard_heartBtn"
+        app:layout_constraintTop_toTopOf="@+id/prodcard_heartBtn"
+        app:srcCompat="@drawable/ic_heart" />
+
+    <TextView
+        android:id="@+id/prodcard_addBtn"
+        android:layout_width="355dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/z_orange_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/addtxt"
+        android:layout_width="112dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/add_to_cart"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/prodcard_addBtn"
+        app:layout_constraintStart_toStartOf="@+id/prodcard_addBtn"
+        app:layout_constraintTop_toTopOf="@+id/prodcard_addBtn" />
+
+    <TextView
+        android:id="@+id/prodcard_price"
+        android:layout_width="99dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/price"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/prodcard_addBtn"
+        app:layout_constraintEnd_toEndOf="@+id/prodcard_addBtn"
+        app:layout_constraintTop_toTopOf="@+id/prodcard_addBtn" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        app:tabIndicatorColor="@color/orange"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/d_gray">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_shop"
+           />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_details"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_features"
+            />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/prod_description"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/prodcard_addBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        app:layout_wrapBehaviorInParent="included"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

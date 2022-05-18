@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/z_spinner_settings"
+    android:id="@+id/bottomSheetContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="375dp" >
+
+
+        <ImageView
+            android:id="@+id/back_cross"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginBottom="45dp"
+            android:elevation="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/brandtxt"
+            app:layout_constraintEnd_toStartOf="@+id/filtertxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/z_blue_full_rounded"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/back_cross"
+            app:layout_constraintEnd_toEndOf="@+id/back_cross"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/back_cross"
+            app:layout_constraintTop_toTopOf="@+id/back_cross"
+            app:layout_constraintVertical_bias="0.478"
+            app:srcCompat="@drawable/ic_xmark"
+            android:elevation="20dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+
+        <TextView
+            android:id="@+id/filtertxt"
+            android:layout_width="114dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="31dp"
+            android:text="@string/filter_options"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/doneBtn"
+            android:layout_width="86dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="308dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="72dp"
+            android:contextClickable="true"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/brands"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/z_orange_rounded"
+            tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck" />
+
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="46dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="7dp"
+            android:text="Done"
+            android:elevation="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/doneBtn"
+            app:layout_constraintTop_toTopOf="@+id/doneBtn"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/brandtxt"
+            android:layout_width="57dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="52dp"
+            android:text="Brand"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filtertxt"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/brands"
+            android:layout_width="337dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="133dp"
+            android:entries="@array/tmArr"
+            android:popupElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pricetxt"
+            android:layout_width="57dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="90dp"
+            android:text="Price"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/prices"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filtertxt"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/prices"
+            android:layout_width="337dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="212dp"
+            android:entries="@array/priceArr"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sizetxt"
+            android:layout_width="57dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="216dp"
+            android:text="Size"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/sizes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filtertxt"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sizes"
+            android:layout_width="337dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="294dp"
+            android:layout_marginBottom="44dp"
+            android:entries="@array/sizeArr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

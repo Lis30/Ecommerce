@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainScreen">
+
+    <fragment
+        android:id="@+id/MainScreen"
+        android:label="@string/main_screen"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/action_MainScreen_to_Prodcard"
+            app:destination="@id/ProdCard" />
+        <action
+            android:id="@+id/action_MainScreen_to_Basket"
+            app:destination="@id/Basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProdCard"
+        android:label="@string/prod_card"
+        tools:layout="@layout/activity_main_prodcard">
+
+        <action
+            android:id="@+id/action_ProdCard_to_MainScreen"
+            app:destination="@id/MainScreen" />
+        <action
+            android:id="@+id/action_ProdCard_to_Basket"
+            app:destination="@id/Basket" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Basket"
+        android:label="@string/basket"
+        tools:layout="@layout/activity_main_basket">
+
+        <action
+            android:id="@+id/action_Basket_to_MainScreen"
+            app:destination="@id/MainScreen" />
+    </fragment>
+</navigation>

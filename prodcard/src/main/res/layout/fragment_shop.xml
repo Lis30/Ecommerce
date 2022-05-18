@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ShopFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/sdCardIc"
+            android:layout_width="19dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="154dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_sd_card"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/cameraIc"
+            android:layout_width="28dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="154dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chipIc"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_camera"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/memoryIc"
+            android:layout_width="28dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="154dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sdCardIc"
+            app:layout_constraintStart_toEndOf="@+id/cameraIc"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_member"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/chipIc"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_chip"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:id="@+id/chipTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/none"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/chipIc"
+            app:layout_constraintStart_toStartOf="@+id/chipIc"
+            app:layout_constraintTop_toBottomOf="@+id/chipIc" />
+
+
+        <TextView
+            android:id="@+id/cameratxt"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/none"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/cameraIc"
+            app:layout_constraintStart_toStartOf="@+id/cameraIc"
+            app:layout_constraintTop_toBottomOf="@+id/cameraIc" />
+
+        <TextView
+            android:id="@+id/memoryTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/none"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/memoryIc"
+            app:layout_constraintStart_toStartOf="@+id/memoryIc"
+            app:layout_constraintTop_toBottomOf="@+id/memoryIc" />
+
+        <TextView
+            android:id="@+id/sdCardTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/none"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/sdCardIc"
+            app:layout_constraintStart_toStartOf="@+id/sdCardIc"
+            app:layout_constraintTop_toBottomOf="@+id/sdCardIc" />
+
+        <TextView
+            android:id="@+id/selecttxt"
+            android:layout_width="196dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="81dp"
+            android:text="Select color and capacity"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/button2"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_v"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/selecttxt"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/button"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selecttxt"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/first_cap"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/z_orange_rounded"
+            android:gravity="center_horizontal|center"
+            android:text="256 GB"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/selecttxt"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/second_cap"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center_horizontal|center"
+            android:text="128 GB"
+            android:textColor="@color/dd_gray"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/first_cap"
+            app:layout_constraintTop_toBottomOf="@+id/selecttxt"
+            tools:ignore="HardcodedText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

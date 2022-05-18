@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">activity_basket</string>
+    <string name="empty">Your basket is empty yet</string>
+</resources>
