@@ -3,8 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.ecommerce.App">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/MainScreen"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/main_screen"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/ProdCard"
+        android:orderInCategory="100"
+        android:title="@string/prod_card"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Basket"
+        android:orderInCategory="100"
+        android:title="@string/basket"
         app:showAsAction="never" />
 </menu>

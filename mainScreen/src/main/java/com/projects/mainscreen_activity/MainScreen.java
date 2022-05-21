@@ -73,11 +73,6 @@ private void SetCat(){
 
 }
 
-
-
-
-
-
     public void GetData() {
 
           Retrofit retrofit = new Retrofit.Builder()

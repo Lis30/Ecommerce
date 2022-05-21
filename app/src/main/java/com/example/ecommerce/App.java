@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 import com.example.ecommerce.DI.Component.AppComponent;
 import com.example.ecommerce.DI.Component.DaggerAppComponent;
@@ -16,26 +17,24 @@ import com.google.android.material.snackbar.Snackbar;
 public class App extends AppCompatActivity {
 
     private AppComponent component;
+    NavController navController;
     ConstraintLayout splash;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
+       splash = findViewById(R.id.splash);
+      //  navController = Navigation.findNavController(this, R.id.nav_host_frag);
 
-splash = findViewById(R.id.splash);
 
         init();
 
-  //      NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        splash.postDelayed(
+        (Runnable) (navController =  Navigation.findNavController(this, R.id.nav_host_frag)), 3000);
 
 
-        splash.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-setContentView(com.projects.mainscreen_activity.R.layout.activity_main);
-            }
-        });
+
 
 
     }
